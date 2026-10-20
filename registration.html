@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Регистрация — NRJR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+
+      <!-- Лого -->
+      <a href="index.html" style="text-decoration: none;">
+        <div class="logo">⚙️ NRJR <span>Arena</span></div>
+      </a>
+
+      <nav class="main-nav">
+        <!-- Начальная -->
+        <a href="index.html">Главная</a>
+
+        <a href="about.html">Об игре</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="registration.html">Регистрация</a>
+
+        <!-- Задания -->
+        <a href="dom_js.html">Задание 1 (DOM)</a>
+        <a href="latin.html">Задание 2 (Латиница)</a>
+        <a href="task_1004.html">Задача 1004</a>
+
+
+        <!-- Гит -->
+        <a href="https://github.com/weugaf/HTML_HSE" target="_blank" class="ext">GitHub</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Регистрация на бой</h1>
+
+    <div class="card">
+      <form data-remote data-status="reg-status">
+        <div class="form-grid">
+          <div class="form-field">
+            <label>Позывной (text):</label>
+            <input type="text" name="nickname" required value="Rookie_01">
+          </div>
+          <div class="form-field">
+            <label>Карта памяти (number):</label>
+            <input type="number" name="card" required value="777">
+          </div>
+          <div class="form-field">
+            <label>Дата боя (date):</label>
+            <input type="date" name="date" required>
+          </div>
+          <div class="form-field">
+            <label>Секретный код (password):</label>
+            <input type="password" name="pass" required value="2026">
+          </div>
+        </div>
+
+        <div class="form-field" style="margin-top:15px;">
+          <label>Класс корпуса (radio):</label>
+          <div class="radio-group">
+            <label><input type="radio" name="class" value="light" checked> Легкий</label>
+            <label><input type="radio" name="class" value="heavy"> Тяжелый</label>
+          </div>
+        </div>
+
+        <div class="form-field" style="margin-top:15px;">
+          <label>Оружие (checkbox):</label>
+          <div class="check-group">
+            <label><input type="checkbox" name="nitro" value="yes" checked> Турбо</label>
+            <label><input type="checkbox" name="armor" value="yes"> Броня</label>
+          </div>
+        </div>
+
+        <input type="hidden" name="form_type" value="registration">
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Подать заявку</button>
+          <span id="reg-status" class="form-status"></span>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">© 2026 NRJR</footer>
+  <script src="script.js"></script>
+</body>
+</html>

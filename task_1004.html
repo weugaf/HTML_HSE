@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Решение алгоритмической задачи</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+
+      <!-- Лого -->
+      <a href="index.html" style="text-decoration: none;">
+        <div class="logo">⚙️ NRJR <span>Arena</span></div>
+      </a>
+
+      <nav class="main-nav">
+        <!-- Начальная -->
+        <a href="index.html">Главная</a>
+
+        <a href="about.html">Об игре</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="registration.html">Регистрация</a>
+
+        <!-- Задания -->
+        <a href="dom_js.html">Задание 1 (DOM)</a>
+        <a href="latin.html">Задание 2 (Латиница)</a>
+        <a href="task_1004.html">Задача 1004</a>
+
+
+        <!-- гит -->
+        <a href="https://github.com/weugaf/HTML_HSE" target="_blank" class="ext">GitHub</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Решение алгоритмической задачи (№1004)</h1>
+
+    <div class="card">
+      <p><b>Задача 1004:</b> Можно ли в квадратном зале площадью S поместить круглую арену радиусом R так, чтобы от стены до сцены был проход не менее K?</p>
+
+      <form onsubmit="solveAlgorithm(event)">
+        <div class="form-grid">
+          <div class="form-field">
+            <label>Площадь арены S:</label>
+            <input type="number" step="any" id="task-S" value="100" required>
+          </div>
+          <div class="form-field">
+            <label>Радиус арены R:</label>
+            <input type="number" step="any" id="task-R" value="3" required>
+          </div>
+          <div class="form-field">
+            <label>Проход K:</label>
+            <input type="number" step="any" id="task-K" value="2" required>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn">▶ Решить</button>
+        </div>
+      </form>
+
+      <div id="algo-result" class="card" style="display:none; margin-top:20px; border-color:var(--accent);"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">© 2026 NRJR</footer>
+  <script src="script.js"></script>
+</body>
+</html>

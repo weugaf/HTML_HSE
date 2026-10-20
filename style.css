@@ -1,0 +1,67 @@
+:root {
+  --bg: #0a0a0c;
+  --card: #15151a;
+  --text: #e0e0e0;
+  --primary:rgb(207,3,29); /* красный */
+  --accent: #ff9600; /* акцент */
+  --border: #333;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Шапка и меню */
+.site-header { background: #000; border-bottom: 2px solid var(--primary); position: sticky; top: 0; z-index: 100; }
+.header-inner { max-width: 1100px; margin: 0 auto; padding: 15px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+.logo { font-weight: bold; font-size: 1.4rem; color: #fff; letter-spacing: 2px; }
+.logo span { color: var(--primary); }
+.main-nav { display: flex; gap: 15px; flex-wrap: wrap; }
+.main-nav a { color: #aaa; font-weight: bold; font-size: 0.9rem; text-transform: uppercase; }
+.main-nav a:hover, .main-nav a.active { color: var(--primary); text-decoration: none; }
+.main-nav a.ext::after { content: " ↗"; }
+
+/* Контейнеры */
+.container { max-width: 1100px; margin: 30px auto; padding: 0 15px; min-height: 70vh; }
+h1 { color: var(--accent); margin-bottom: 20px; font-size: 2rem; text-transform: uppercase; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+h2 { color: #fff; margin: 20px 0 10px; }
+
+/* Карточки */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 25px; margin-bottom: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+.card p { margin-bottom: 15px; }
+
+/* Кнопки */
+.btn { background: var(--primary); color: #fff; border: none; padding: 12px 24px; font-size: 1rem; font-weight: bold; border-radius: 4px; cursor: pointer; text-transform: uppercase; transition: 0.3s; }
+.btn:hover { background: #cc0044; box-shadow: 0 0 15px var(--primary); }
+.btn-secondary { background: #333; }
+.btn-secondary:hover { background: #555; box-shadow: none; }
+
+/* Формы? */
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.form-field { display: flex; flex-direction: column; gap: 8px; }
+.form-field label { font-weight: bold; color: var(--accent); font-size: 0.9rem; }
+input, select, textarea { padding: 10px; background: #000; border: 1px solid #444; color: #fff; border-radius: 4px; font-family: inherit; }
+input:focus, textarea:focus { border-color: var(--primary); outline: none; }
+.radio-group, .check-group { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 5px; }
+.form-actions { margin-top: 25px; display: flex; gap: 15px; align-items: center; }
+.form-status { font-size: 0.9rem; font-weight: bold; }
+
+/* Списки */
+ul, ol { margin-left: 25px; margin-bottom: 15px; }
+li { margin-bottom: 8px; }
+
+/* Паспорт */
+.passport-box { background: #1a1a1a; padding: 20px; border: 1px dashed var(--accent); border-radius: 8px; margin-bottom: 20px; }
+.passport-box p { font-family: monospace; font-size: 1.1rem; border-bottom: 1px solid #333; padding: 8px 0; margin: 0; }
+.passport-box span { color: var(--primary); font-weight: bold; }
+
+/* Таблица */
+table { width: 100%; border-collapse: collapse; margin: 20px 0; background-size: cover; background-position: center; }
+th, td { padding: 15px; border: 1px solid var(--border); background: rgba(21, 21, 26, 0.9); color: #fff; }
+th { background: rgba(207,3,29); }
+
+/* Нижняя плашка */
+.site-footer { text-align: center; padding: 20px; background: #000; color: #666; border-top: 1px solid var(--border); }

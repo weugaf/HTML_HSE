@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Галерея — NRJR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" style="text-decoration: none;">
+        <div class="logo">⚙️ NRJR <span>Arena</span></div>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="about.html">Об игре</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="registration.html">Регистрация</a>
+        <a href="dom_js.html">Задание 1 (DOM)</a>
+        <a href="latin.html">Задание 2 (Латиница)</a>
+        <a href="task_1004.html">Задача 1004</a>
+        <a href="https://github.com/weugaf/HTML_HSE" target="_blank" class="ext">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Галерея и Персонажи</h1>
+
+
+
+    <!-- Картинка с комментарием и большая картинкаа -->
+    <div class="card" id="pictures">
+      <h2>Главный герой</h2>
+
+      <!-- ПУНКТ 8: Изображение с пояснением -->
+      <figure style="text-align: center; margin-bottom: 30px;">
+        <img src="images/gg.jpg" alt="Гладиатор 72" width="300" style="border-radius: 8px;">
+        <figcaption style="font-size: 0.9rem; color: #888; margin-top: 8px;">
+          Гладиатор 72 — самовлюбленный новичок, еще не заслуживший имя. Делает ставку на скорость и яркий образ.
+        </figcaption>
+      </figure>
+
+      <p><b>Мотивация:</b> Выходец из среднего класса, привыкший быть в центре внимания. После публичного позора на фоне успеха бывшего соратника он пытается восстановить уважение окружающих и свою разбитую самооценку.</p>
+      <p><b>Конфликт:</b> Слишком горд и самоуверен. Смена деталей дается тяжело — нужно отказаться от своего «оригинала» ради лучшего набора.</p>
+
+      <!-- Мини макси -->
+      <h3 style="margin-top:30px;">Разработка</h3>
+      <p>Нажмите на миниатюру ниже, чтобы открыть разработку концепт-арта главного героя.</p>
+      <a href="images/600na400.png" target="_blank">
+        <!-- 100 пикс -->
+        <img src="images/600na400.png" width="100" height="66" alt="Миниатюра арены" style="border: 2px solid var(--primary); border-radius: 4px;">
+      </a>
+    </div>
+
+    <!-- Таблица -->
+    <div class="card" id="table">
+      <h2>Таблица экипировки</h2>
+      <table style="background-image: url('images/gladiatori.png');">
+        <thead>
+          <tr>
+            <th>Компонент</th>
+            <th>Описание</th>
+            <th>Фото</th>
+            <th>Подробнее</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Карта памяти</td>
+            <td>Ядро личности пилота. Не подлежит замене.</td>
+            <td><img src="images/chip.png" width="100" alt="Карта" style="border-radius: 4px;"></td>
+            <td><a href="https://ru.wikipedia.org/wiki/Флеш-память" target="_blank">Википедия</a></td>
+          </tr>
+          <tr>
+            <td>Турбо-ускоритель</td>
+            <td>Необходим для побед в забегах.</td>
+            <td><img src="images/topor.png" width="100" alt="Двигатель" style="border-radius: 4px;"></td>
+            <td><a href="https://ru.wikipedia.org/wiki/Двигатель" target="_blank">Википедия</a></td>
+          </tr>
+          <tr>
+            <td>Шипы на ногах</td>
+            <td>Для сцепления и таранов на арене.</td>
+            <td><img src="images/boy.png" width="100" alt="Шипы" style="border-radius: 4px;"></td>
+            <td><a href="https://ru.wikipedia.org/wiki/Шины" target="_blank">Википедия</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="site-footer">© 2026 NRJR</footer>
+  <script src="script.js"></script>
+</body>
+</html>

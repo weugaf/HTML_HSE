@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Изменяем кириллицу на латиницу по клику</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+    <div class="header-inner">
+
+      <!-- Лого -->
+      <a href="index.html" style="text-decoration: none;">
+        <div class="logo">⚙️ NRJR <span>Arena</span></div>
+      </a>
+
+      <nav class="main-nav">
+        <!-- Начальная -->
+        <a href="index.html">Главная</a>
+
+        <a href="about.html">Об игре</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="registration.html">Регистрация</a>
+
+        <!-- Задания -->
+        <a href="dom_js.html">Задание 1 (DOM)</a>
+        <a href="latin.html">Задание 2 (Латиница)</a>
+        <a href="task_1004.html">Задача 1004</a>
+
+
+        <!-- гит -->
+        <a href="https://github.com/weugaf/HTML_HSE" target="_blank" class="ext">GitHub</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Изменяем кириллицу на латиницу по клику</h1>
+
+    <div class="card">
+      <div class="passport-box">
+        <p>Фамилия: <span>Иванов</span></p>
+        <p>Имя: <span>Иван</span></p>
+        <p>Год рождения: <span>2005</span></p>
+      </div>
+
+      <button class="btn" onclick="changeCyrillicToLatin()"> Кириллица -> Латиница</button>
+      <p id="latin-status" style="margin-top:15px; font-weight:bold;"></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">© 2026 NRJR</footer>
+  <script src="script.js"></script>
+</body>
+</html>
